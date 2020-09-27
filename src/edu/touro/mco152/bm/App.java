@@ -81,7 +81,7 @@ public class App {
     /**
      * Get the version from the build properties. Defaults to 0.0 if not found.
      *
-     * @return
+     * @return the version from the build properties.
      */
     public static String getVersion() {
         Properties bp = new Properties();
@@ -183,6 +183,11 @@ public class App {
         }
     }
 
+    /**
+     * Get the configuration data.
+     *
+     * @return a String with all of the configuration properties.
+     */
     public static String getConfigString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Config for Java Disk Mark ").append(getVersion()).append('\n');

@@ -112,7 +112,7 @@ public class Util {
      * Gets the drive type string for a root file such as C:\
      *
      * @param file
-     * @return
+     * @return the file's drive type.
      */
     public static String getDriveType(File file) {
         FileSystemView fsv = FileSystemView.getFileSystemView();
