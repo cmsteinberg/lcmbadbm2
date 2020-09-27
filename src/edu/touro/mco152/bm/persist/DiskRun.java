@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- *
+ * This class tracks and persists the benchmark data of a full run.
  */
 @Entity
 @Table(name = "DiskRun")

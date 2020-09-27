@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Primary class for global variables and common methods.
+ * Primary class for global variables and common methods. This is where the app is initialized.
  */
 public class App {
 
