@@ -347,5 +347,13 @@ public class App {
         rMin = -1;
     }
 
-    public enum State {IDLE_STATE, DISK_TEST_STATE}
+    public enum State {IDLE_STATE, DISK_TEST_STATE}{
+}
+
+    /**
+     * Adds more useless code
+     */
+    public void JavaDocMess(){
+        System.out.println("jajwnhcb");
+    }
 }
