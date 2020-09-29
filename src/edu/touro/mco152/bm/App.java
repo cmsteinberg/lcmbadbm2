@@ -337,6 +337,9 @@ public class App {
         nextMarkNumber = 1;
     }
 
+    /**
+     * resets test data
+     */
     static public void resetTestData() {
         nextMarkNumber = 1;
         wAvg = -1;
@@ -345,13 +348,16 @@ public class App {
         rAvg = -1;
         rMax = -1;
         rMin = -1;
+
+        String empty = " ";
     }
 
     public enum State {IDLE_STATE, DISK_TEST_STATE}{
 }
 
+
     /**
-     * Adds more useless code
+     * Adds useless code
      */
     public void JavaDocMess(){
         System.out.println("jajwnhcb");
