@@ -357,9 +357,12 @@ public class App {
 
 
     /**
-     * Adds useless code
+     * useless code
+     * @param a
+
+     * @ return the given int
      */
-    public void JavaDocMess(){
-        System.out.println("jajwnhcb");
+    public int JavaDocMess(int a){
+        return a;
     }
 }
