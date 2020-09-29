@@ -26,11 +26,8 @@ import static edu.touro.mco152.bm.DiskMark.MarkType.WRITE;
  * <p>
  * Depends on static values that describe the benchmark to be done having been set in App and Gui classes.
  * The DiskRun class is used to keep track of and persist info about each benchmark at a higher level (a run),
- * while the DiskMark class described each iteration's result, which is displayed by the UI as the benchmark run
+ * while the {@link edu.touro.mco152.bm.DiskMark} class  described each iteration's result, which is displayed by the UI as the benchmark run
  * progresses.
- * <p>
- * This class only knows how to do 'read' or 'write' disk benchmarks. It is instantiated by the
- * startBenchmark() method.
  * <p>
  * To be Swing compliant this class extends SwingWorker and declares that its final return (when
  * doInBackground() is finished) is of type Boolean, and declares that intermediate results are communicated to

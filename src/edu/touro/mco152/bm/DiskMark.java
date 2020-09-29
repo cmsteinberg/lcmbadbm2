@@ -3,7 +3,7 @@ package edu.touro.mco152.bm;
 import java.text.DecimalFormat;
 
 /**
- *
+ *  this class describes the results of each iteration of the benchmark. It works in tandem with DiskWorker/
  */
 public class DiskMark {
 

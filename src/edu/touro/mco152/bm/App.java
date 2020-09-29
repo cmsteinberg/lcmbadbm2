@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 
 /**
  * Primary class for global variables and common methods.
+ * This class also initializes the Benchmark via the main and init methods.
  */
 public class App {
 
