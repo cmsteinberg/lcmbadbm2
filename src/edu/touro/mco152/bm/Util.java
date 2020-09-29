@@ -347,6 +347,12 @@ public class Util {
         return null;
     }
 
+    /**
+     * Get the device from OSX Path.
+     *
+     * @param path
+     * @return a String with the Path data.
+     */
     static public String getDeviceFromPathOSX(Path path) {
         try {
             Process p = Runtime.getRuntime().exec("df " + path.toString());

@@ -182,7 +182,11 @@ public class App {
             Logger.getLogger(SelectFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+    /**
+     * Get the configuration data.
+     *
+     * @return a String with the configuration properties.
+     */
     public static String getConfigString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Config for Java Disk Mark ").append(getVersion()).append('\n');
@@ -337,9 +341,6 @@ public class App {
         nextMarkNumber = 1;
     }
 
-    /**
-     * resets test data
-     */
     static public void resetTestData() {
         nextMarkNumber = 1;
         wAvg = -1;
@@ -348,21 +349,7 @@ public class App {
         rAvg = -1;
         rMax = -1;
         rMin = -1;
-
-        String empty = " ";
     }
 
-    public enum State {IDLE_STATE, DISK_TEST_STATE}{
-}
-
-
-    /**
-     * useless code
-     * @param a
-
-     * @ return the given int
-     */
-    public int JavaDocMess(int a){
-        return a;
-    }
+    public enum State {IDLE_STATE, DISK_TEST_STATE}
 }
