@@ -298,4 +298,5 @@ public class DiskWorker extends SwingWorker<Boolean, DiskMark> {
         App.state = App.State.IDLE_STATE;
         Gui.mainFrame.adjustSensitivity();
     }
+
 }
