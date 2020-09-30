@@ -132,6 +132,7 @@ public class DiskRun implements Serializable {
     }
 
     // basic getters and setters
+    //basic is boring though
 
     public Long getId() {
         return id;

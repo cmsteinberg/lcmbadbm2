@@ -3,7 +3,7 @@ package edu.touro.mco152.bm;
 import java.text.DecimalFormat;
 
 /**
- *
+ *What is this...big confusions
  */
 public class DiskMark {
 

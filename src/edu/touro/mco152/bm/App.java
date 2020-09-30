@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 
 /**
  * Primary class for global variables and common methods.
+ * Obviously A Garbage class that needs to be fixed
  */
 public class App {
 

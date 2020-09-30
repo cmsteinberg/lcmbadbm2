@@ -45,6 +45,8 @@ public class Util {
      * @param max Maximum value.  Must be greater than min.
      * @return Integer between min and max, inclusive.
      * @see java.util.Random#nextInt(int)
+     *
+     * Is this method really needed?
      */
     public static int randInt(int min, int max) {
 
@@ -59,6 +61,7 @@ public class Util {
 
     /*
      * Not used kept here for reference.
+     * Reference to what?
      */
     static public void readPhysicalDrive() throws IOException {
         File diskRoot = new File("\\\\.\\PhysicalDrive0");

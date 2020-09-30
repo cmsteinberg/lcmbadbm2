@@ -29,9 +29,6 @@ import static edu.touro.mco152.bm.DiskMark.MarkType.WRITE;
  * while the DiskMark class described each iteration's result, which is displayed by the UI as the benchmark run
  * progresses.
  * <p>
- * This class only knows how to do 'read' or 'write' disk benchmarks. It is instantiated by the
- * startBenchmark() method.
- * <p>
  * To be Swing compliant this class extends SwingWorker and declares that its final return (when
  * doInBackground() is finished) is of type Boolean, and declares that intermediate results are communicated to
  * Swing using an instance of the DiskMark class.
@@ -108,6 +105,8 @@ public class DiskWorker extends SwingWorker<Boolean, DiskMark> {
              * Begin an outer loop for specified duration (number of 'marks') of benchmark,
              * that keeps writing data (in its own loop - for specified # of blocks). Each 'Mark' is timed
              * and is reported to the GUI for display as each Mark completes.
+             *
+             * Could probably be done more efficiently
              */
             for (int m = startFileNum; m < startFileNum + App.numOfMarks && !isCancelled(); m++) {
 
