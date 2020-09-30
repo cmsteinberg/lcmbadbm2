@@ -15,7 +15,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Primary class for global variables and common methods.
+ * Initializes the various global variables and common methods after the main method is called by the user
+ * @return various initialized variables
  */
 public class App {
 
@@ -79,7 +80,7 @@ public class App {
     }
 
     /**
-     * Get the version from the build properties. Defaults to 0.0 if not found.
+     * Initializes the version from the build properties and defaults to 0.0 if not found.
      *
      * @return
      */
@@ -96,7 +97,8 @@ public class App {
     }
 
     /**
-     * Initialize the GUI Application.
+     * This receives the configuration values from the properties file and initialize the GUI Application using the
+     * properties.
      */
     public static void init() {
         Gui.mainFrame = new MainFrame();
@@ -216,6 +218,10 @@ public class App {
         loadSavedRuns();
     }
 
+    /**
+     * Returns messages to the user to update the user of the apps progress.
+     * @param message The message initiated by the app at different stages of its initialization.
+     */
     public static void msg(String message) {
         Gui.mainFrame.msg(message);
     }
@@ -337,6 +343,9 @@ public class App {
         nextMarkNumber = 1;
     }
 
+    /**
+     * Resets the data after the app is finished to ready the app for another use.
+     */
     static public void resetTestData() {
         nextMarkNumber = 1;
         wAvg = -1;

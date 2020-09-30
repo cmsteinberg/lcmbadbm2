@@ -20,21 +20,22 @@ import static edu.touro.mco152.bm.DiskMark.MarkType.READ;
 import static edu.touro.mco152.bm.DiskMark.MarkType.WRITE;
 
 /**
- * Run the disk benchmarking as a Swing-compliant thread (only one of these threads can run at
- * once.) Cooperates with Swing to provide and make use of interim and final progress and
- * information, which is also recorded as needed to the persistence store, and log.
+ * Does the heavy-lifting of the disk benchmarking after it is started by the user by initializing various variables
+ * and methods, and then using those variables along with Swing to show the GUI. This app extends SwingWorker so it
+ * specifically works with Swing and can only be used with a Swing GUI. Also, this records and logs any interim and
+ * final progress.
  * <p>
- * Depends on static values that describe the benchmark to be done having been set in App and Gui classes.
- * The DiskRun class is used to keep track of and persist info about each benchmark at a higher level (a run),
- * while the DiskMark class described each iteration's result, which is displayed by the UI as the benchmark run
- * progresses.
+ * Depends on the App and GUI classes which set the static values that describe the benchmark.
+ * <p>
+ * Depends on the DiskMark for the information of each iteration's result to display them in the GUI.
  * <p>
  * This class only knows how to do 'read' or 'write' disk benchmarks. It is instantiated by the
  * startBenchmark() method.
  * <p>
- * To be Swing compliant this class extends SwingWorker and declares that its final return (when
- * doInBackground() is finished) is of type Boolean, and declares that intermediate results are communicated to
- * Swing using an instance of the DiskMark class.
+ * Declares that its final return (when doInBackground() is finished) is of type Boolean to know whether it worked or
+ * not.
+ * <p>
+ * Declares that intermediate results are communicated to Swing using an instance of the DiskMark class.
  */
 
 public class DiskWorker extends SwingWorker<Boolean, DiskMark> {

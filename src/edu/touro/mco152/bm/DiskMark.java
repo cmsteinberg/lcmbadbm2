@@ -3,7 +3,8 @@ package edu.touro.mco152.bm;
 import java.text.DecimalFormat;
 
 /**
- *
+ * Describes each iteration's result, which is displayed by the UI as the benchmark run
+ * progresses.
  */
 public class DiskMark {
 

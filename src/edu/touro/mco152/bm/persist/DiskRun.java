@@ -9,7 +9,8 @@ import java.util.Date;
 import java.util.List;
 
 /**
- *
+ *keeps track of and persists info about each benchmark at a higher level (a run). THis class is serializable to help
+ * easily read and write data with the DiskWorker.
  */
 @Entity
 @Table(name = "DiskRun")
