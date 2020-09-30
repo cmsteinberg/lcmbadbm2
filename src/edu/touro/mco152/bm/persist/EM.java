@@ -10,6 +10,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
+ * Tracks and manages the persistence contexts of the DiskWorker using the EntityManager interface.
  * @author James
  */
 public class EM {

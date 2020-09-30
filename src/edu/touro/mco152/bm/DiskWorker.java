@@ -291,6 +291,11 @@ public class DiskWorker extends SwingWorker<Boolean, DiskMark> {
         });
     }
 
+    /**
+     * Indicates that the doInBackgrond is complete and that the the data can now safely be deleted. This then
+     * adjusts the GUI and App accordingly.
+     * @override done() from SwingWorker
+     */
     @Override
     protected void done() {
         if (App.autoRemoveData) {
