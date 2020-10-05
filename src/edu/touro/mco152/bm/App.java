@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Primary class for global variables and common methods.
+ * Primary class for global variables and common methods. Must become heavily dependent on abstractions
  */
 public class App {
 
@@ -79,7 +79,7 @@ public class App {
     }
 
     /**
-     * Get the version from the build properties. Defaults to 0.0 if not found.
+     * Get the version from the build properties. Defaults to 0.0 if not found. No appending necessary
      *
      * @return
      */
@@ -123,6 +123,10 @@ public class App {
         });
     }
 
+
+    /**
+     * This method loads the configurations for the benchmarking tool.
+     */
     public static void loadConfig() {
         File pFile = new File(PROPERTIESFILE);
         if (!pFile.exists()) {
