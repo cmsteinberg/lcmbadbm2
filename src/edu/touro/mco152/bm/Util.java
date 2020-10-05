@@ -10,7 +10,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Utility methods for jDiskMark
+ * Utility methods for jDiskMark. There is a heavy necessity for this to be abstracted.
  */
 public class Util {
 
@@ -69,8 +69,8 @@ public class Util {
         System.out.println("content " + Arrays.toString(content));
     }
 
-    /*
-     * Not used kept here for reference.
+    /**
+     * This allows the user to view the system stats in the console.
      */
     public static void sysStats() {
         /* Total number of processors or cores available to the JVM */
@@ -150,7 +150,7 @@ public class Util {
 
     /**
      * This method became obsolete with an updated version of windows 10.
-     * A newer version of the method is used.
+     * A newer version of the method is used. If this is in Windows 8, it works!
      * <p>
      * Get the drive model description based on the windows drive letter.
      * Uses the powershell script disk-model.ps1
