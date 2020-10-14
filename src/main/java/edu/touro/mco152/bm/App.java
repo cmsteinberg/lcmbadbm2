@@ -16,6 +16,10 @@ import java.util.logging.Logger;
 
 /**
  * Primary class for global variables and common methods.
+ * <p>
+ * violates SRP. Needs to be refactored. Also handles initializing the gui, the main method
+ * and creating diskworker, which is too much.
+ *
  */
 public class App {
 

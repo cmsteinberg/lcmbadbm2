@@ -10,6 +10,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
+ * Returns an entity manager. Checks to see if there is already is one and creates if there isn't
  * @author James
  */
 public class EM {
