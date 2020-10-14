@@ -97,6 +97,10 @@ public class App {
 
     /**
      * Initialize the GUI Application.
+     * <p>
+     * Changing this for javadoc assignment
+     * <p>
+     * should really be put into it's own class
      */
     public static void init() {
         Gui.mainFrame = new MainFrame();
@@ -200,6 +204,10 @@ public class App {
         return sb.toString();
     }
 
+    /**
+     * loads saved runs. Clears data and then adds to the table with saved runs
+     * from the enitity manager
+     */
     public static void loadSavedRuns() {
         Gui.runPanel.clearTable();
 
@@ -216,6 +224,11 @@ public class App {
         loadSavedRuns();
     }
 
+    /**
+     * calls the msg method of Gui's mainframe. A static method that allows different text to
+     * be appended to the Gui
+     * @param message
+     */
     public static void msg(String message) {
         Gui.mainFrame.msg(message);
     }
