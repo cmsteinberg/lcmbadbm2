@@ -65,9 +65,11 @@ public class DiskRun implements Serializable {
     @Column
     private
     double runAvg = 0;
+
     public DiskRun() {
         this.startTime = new Date();
     }
+
     public DiskRun(IOMode type, BlockSequence order) {
         this.startTime = new Date();
         setIoMode(type);
