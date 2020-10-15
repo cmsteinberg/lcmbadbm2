@@ -1,3 +1,10 @@
+/**
+ * @author: Jacob Dadoun
+ *
+ * App.java contains the main() method for running lcmbadbm.
+ * As mentioned in the reading, a complete javadoc comment is not necessary since this class must be refactored.
+ * Note that it should be dependant on abstractions in the future
+ */
 package edu.touro.mco152.bm;
 
 import edu.touro.mco152.bm.persist.DiskRun;
@@ -14,9 +21,7 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * Primary class for global variables and common methods.
- */
+
 public class App {
 
     public static final String APP_CACHE_DIR = System.getProperty("user.home") + File.separator + ".jDiskMark";
@@ -94,7 +99,7 @@ public class App {
     }
 
     /**
-     * Initialize the GUI Application.
+     * Initialize GUI Application.
      */
     public static void init() {
         Gui.mainFrame = new MainFrame();
@@ -121,6 +126,9 @@ public class App {
         });
     }
 
+    /**
+     * Load properties for data presentation
+     */
     public static void loadConfig() {
         File pFile = new File(PROPERTIESFILE);
         if (!pFile.exists()) {
@@ -159,6 +167,9 @@ public class App {
         writeSyncEnable = Boolean.valueOf(value);
     }
 
+    /**
+     * Saves properties for data presentation
+     */
     public static void saveConfig() {
         p.setProperty("locationDir", App.locationDir.getAbsolutePath());
         p.setProperty("multiFile", String.valueOf(multiFile));
@@ -181,6 +192,9 @@ public class App {
         }
     }
 
+    /**
+     * Return data in StringBuilder sb
+     */
     public static String getConfigString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Config for Java Disk Mark ").append(getVersion()).append('\n');

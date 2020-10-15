@@ -10,7 +10,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Utility methods for jDiskMark
+ * Utility.java contains necessary methods for OS communication & compliance
  */
 public class Util {
 
