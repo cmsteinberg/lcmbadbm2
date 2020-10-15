@@ -24,8 +24,6 @@ public class App {
     public static final String DATADIRNAME = "jDiskMarkData";
     public static final int MEGABYTE = 1024 * 1024;
     public static final int KILOBYTE = 1024;
-    public static final int IDLE_STATE = 0;
-    public static final int DISK_TEST_STATE = 1;
     public static State state = State.IDLE_STATE;
     public static Properties p;
     public static File locationDir = null;
