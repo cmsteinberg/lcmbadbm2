@@ -3,7 +3,7 @@ package edu.touro.mco152.bm;
 import java.text.DecimalFormat;
 
 /**
- *
+ *This class is used to keep track and display the average read and write speeds and other miscellaneous data.
  */
 public class DiskMark {
 

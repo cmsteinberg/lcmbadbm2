@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Primary class for global variables and common methods.
+ * Primary class that contains the main method to run the DiskMark GUI program.
  */
 public class App {
 
@@ -50,6 +50,7 @@ public class App {
     public static double rMax = -1, rMin = -1, rAvg = -1;
 
     /**
+     * This is the main method to run the DiskMark GUI program
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -81,7 +82,7 @@ public class App {
     /**
      * Get the version from the build properties. Defaults to 0.0 if not found.
      *
-     * @return
+     * @return the version number of the build
      */
     public static String getVersion() {
         Properties bp = new Properties();
@@ -161,6 +162,9 @@ public class App {
         writeSyncEnable = Boolean.valueOf(value);
     }
 
+    /**
+     * This method saves the current configuration of the program that the user set.
+     */
     public static void saveConfig() {
         p.setProperty("locationDir", App.locationDir.getAbsolutePath());
         p.setProperty("multiFile", String.valueOf(multiFile));
