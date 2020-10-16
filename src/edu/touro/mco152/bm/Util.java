@@ -10,7 +10,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Utility methods for jDiskMark
+ * This class contains utility methods for jDiskMark, to aid in creating and running a disk benchmark test.
+ * Mainly used to get information about the computer running the program, such as getting info on the computer's disk and device.
  */
 public class Util {
 
@@ -19,8 +20,9 @@ public class Util {
     /**
      * Deletes the Directory and all files within
      *
-     * @param path
-     * @return
+     * @param path the string that contains the path of the directory to be deleted
+     * @return     <code>true</code> if and only if the file or directory is
+     *             successfully deleted; <code>false</code> otherwise
      */
     static public boolean deleteDirectory(File path) {
         if (path.exists()) {
@@ -111,8 +113,8 @@ public class Util {
     /**
      * Gets the drive type string for a root file such as C:\
      *
-     * @param file
-     * @return
+     * @param file the file from which to get the drive type
+     * @return     a string with the drive type of the file
      */
     public static String getDriveType(File file) {
         FileSystemView fsv = FileSystemView.getFileSystemView();
@@ -231,8 +233,8 @@ public class Util {
      * <p>
      * Tested on Windows 10 on 3/6/2017
      *
-     * @param driveLetter
-     * @return
+     * @param driveLetter the string holding the single character drive letter (why not use char?)
+     * @return  a string containing the drive model description
      */
     public static String getModelFromLetter2(String driveLetter) {
         try {

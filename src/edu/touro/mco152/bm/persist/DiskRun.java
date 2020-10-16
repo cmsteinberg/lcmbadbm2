@@ -9,7 +9,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- *
+ * This class is used for running the disk benchmark tests
+ * and storing the information acquired from the tests using
+ * persistence.
  */
 @Entity
 @Table(name = "DiskRun")
@@ -65,20 +67,39 @@ public class DiskRun implements Serializable {
     @Column
     private
     double runAvg = 0;
+
     public DiskRun() {
         this.startTime = new Date();
     }
+
+    /**
+     * Class constructor specifying the type of IO mode and the block sequence order of the run.
+     *
+     * @param type  the IO mode to use on this run
+     * @param order the block sequence order of this run
+     */
     public DiskRun(IOMode type, BlockSequence order) {
         this.startTime = new Date();
         setIoMode(type);
         setBlockOrder(order);
     }
 
+    /**
+     * This method uses an entity manager to call the already made query to
+     * acquire everything stored in the DiskRun table in the persistence database
+     *
+     * @return a list of all the disk runs that were stored in the DiskRun table in the persistence database
+     */
     public static List<DiskRun> findAll() {
         EntityManager em = EM.getEntityManager();
         return em.createNamedQuery("DiskRun.findAll", DiskRun.class).getResultList();
     }
 
+    /**
+     * This method deletes all of the past disk runs that are stored in the DiskRun table in the persistence database
+     *
+     * @return an int of the amount of disk runs deleted
+     */
     public static int deleteAll() {
         EntityManager em = EM.getEntityManager();
         em.getTransaction().begin();

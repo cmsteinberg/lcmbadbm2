@@ -10,6 +10,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
+ *  This class creates a singleton object of an entity manager
+ *  for use in storing the information from the benchmark tests
+ *  using the Persistence API
  * @author James
  */
 public class EM {
