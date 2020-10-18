@@ -43,6 +43,14 @@ import static edu.touro.mco152.bm.DiskMark.MarkType.WRITE;
 
 public class DiskWorker extends SwingWorker<Boolean, DiskMark> {
 
+    /**
+     *
+     * @return
+     * @throws Exception
+     *
+     * TODO: Refactor method to make it SRP compliant (i.e. method can be split into multiple smaller methods
+     * that are each responsible for one task)
+     */
     @Override
     protected Boolean doInBackground() throws Exception {
 

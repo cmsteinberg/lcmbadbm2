@@ -302,6 +302,8 @@ public class Util {
     /**
      * On Linux OS use the lsblk command to get the disk model number for a
      * specific Device ie. /dev/sda
+     * TODO: implment an interface to make this class DIP compliant and remove
+     * the need for separate classes for each OS
      *
      * @param devicePath path of the device
      * @return the disk model number

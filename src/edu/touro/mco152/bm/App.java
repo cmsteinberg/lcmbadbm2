@@ -230,6 +230,9 @@ public class App {
         worker.cancel(true);
     }
 
+    /**
+     * TODO: can be split into multiple methods to achieve SRP compliance
+     */
     public static void startBenchmark() {
 
         //1. check that there isn't already a worker in progress
