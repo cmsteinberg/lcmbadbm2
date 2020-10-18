@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Utility methods for jDiskMark
+ * @author: Shalom Vanderhoof
+ * Class not DIP compliant
  */
 public class Util {
 

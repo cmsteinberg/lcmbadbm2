@@ -16,6 +16,8 @@ import java.util.logging.Logger;
 
 /**
  * Primary class for global variables and common methods.
+ * @author: Shalom Vanderhoof
+ * Some necesarry refactors: some methods aren't SRP compliant, Class isn't OCP compliant
  */
 public class App {
 
