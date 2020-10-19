@@ -11,6 +11,7 @@ import javax.persistence.Persistence;
 
 /**
  * @author James
+ * Contains everything necessary to for creating and managing entity managers
  */
 public class EM {
 

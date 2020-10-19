@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 
 /**
  * Primary class for global variables and common methods.
+ * Contains the main method for the application
  */
 public class App {
 
