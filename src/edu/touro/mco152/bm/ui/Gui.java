@@ -16,7 +16,7 @@ import java.awt.*;
 import java.text.NumberFormat;
 
 /**
- * Store gui references for easy access
+ * Gui provides static references for convenient access to GUI components and GUI helper functions.
  */
 public final class Gui {
 

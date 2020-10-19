@@ -3,7 +3,7 @@ package edu.touro.mco152.bm;
 import java.text.DecimalFormat;
 
 /**
- *
+ * DiskMark is used to store metrics data to quantify benchmark iterations.
  */
 public class DiskMark {
 

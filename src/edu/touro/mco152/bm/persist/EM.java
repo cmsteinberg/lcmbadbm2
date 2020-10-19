@@ -10,6 +10,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
+ * EM provides a reference to an EntityManager singleton.
+ *
+ * The EntityManager instance is used for persistence throughout the application.
+ *
  * @author James
  */
 public class EM {
