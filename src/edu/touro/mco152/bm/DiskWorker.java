@@ -39,8 +39,15 @@ import static edu.touro.mco152.bm.DiskMark.MarkType.WRITE;
 
 public class DiskWorker extends SwingWorker<Boolean, DiskMark> {
 
+    /**
+     * Sets up and performs the benchmarking operations.
+     *
+     * @return true if executes to the end
+     * @throws IOException
+     */
+
     @Override
-    protected Boolean doInBackground() throws Exception {
+    protected Boolean doInBackground() throws IOException {
 
         /**
          * We 'got here' because: a) End-user clicked 'Start' on the benchmark UI,

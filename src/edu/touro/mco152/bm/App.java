@@ -81,7 +81,7 @@ public class App {
     /**
      * Get the version from the build properties. Defaults to 0.0 if not found.
      *
-     * @return
+     * @return the version stored in build properties
      */
     public static String getVersion() {
         Properties bp = new Properties();
@@ -90,7 +90,7 @@ public class App {
             bp.load(new FileInputStream("build.properties"));
             version = bp.getProperty("version");
         } catch (IOException ex) {
-            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+            version = "10.0"
         }
         return version;
     }
