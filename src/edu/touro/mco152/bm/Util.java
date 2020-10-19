@@ -17,10 +17,13 @@ public class Util {
     static final DecimalFormat DF = new DecimalFormat("###.##");
 
     /**
-     * Deletes the Directory and all files within
+     * Deletes the Directory and all files within.
      *
-     * @param path
-     * @return
+     * If the path points to a file and not a directory, the file itself is deleted.
+     *
+     * @param path the path to the directory or file to be deleted
+     * @return <code>true</code> if the file or directory was deleted successfully,
+     * <code>false</code> otherwise
      */
     static public boolean deleteDirectory(File path) {
         if (path.exists()) {
@@ -111,8 +114,9 @@ public class Util {
     /**
      * Gets the drive type string for a root file such as C:\
      *
-     * @param file
-     * @return
+     * @param file the file for which this method returns the drive type
+     * @return the file type description as it would be displayed by a native file chooser
+     * or null if the description is not available
      */
     public static String getDriveType(File file) {
         FileSystemView fsv = FileSystemView.getFileSystemView();

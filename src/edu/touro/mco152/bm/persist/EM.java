@@ -20,6 +20,13 @@ public class EM {
 
     private static EntityManager em = null;
 
+    /**
+     * Provides client with EntityManager instance.
+     * If an instance already exists, it returns that instance.
+     * Otherwise, it creates and returns a new instance.
+     *
+     * @return the single application-wide EntityManager instance
+     */
     public static EntityManager getEntityManager() {
         if (em == null) {
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("jDiskMarkPU");
