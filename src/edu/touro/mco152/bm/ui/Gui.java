@@ -16,7 +16,7 @@ import java.awt.*;
 import java.text.NumberFormat;
 
 /**
- * Store gui references for easy access
+ * Store gui references for easy access. Holds many Swing compononets used in this project.
  */
 public final class Gui {
 
@@ -90,6 +90,10 @@ public final class Gui {
         return chartPanel;
     }
 
+    /**
+     * This method is used to add a benchmarking result to the GUI
+     * @param mark Object containing data from a benchmarking
+     */
     public static void addWriteMark(DiskMark mark) {
         wSeries.add(mark.getMarkNum(), mark.getBwMbSec());
         wAvgSeries.add(mark.getMarkNum(), mark.getCumAvg());
