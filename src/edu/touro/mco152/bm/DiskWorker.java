@@ -20,6 +20,7 @@ import static edu.touro.mco152.bm.DiskMark.MarkType.READ;
 import static edu.touro.mco152.bm.DiskMark.MarkType.WRITE;
 
 /**
+ * This is changed class-level javadoc block 3.
  * Run the disk benchmarking as a Swing-compliant thread (only one of these threads can run at
  * once.) Cooperates with Swing to provide and make use of interim and final progress and
  * information, which is also recorded as needed to the persistence store, and log.

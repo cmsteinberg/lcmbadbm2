@@ -15,6 +15,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * This is changed Java file 1 in genkin-doc.
+ * This is changed class-level javadoc block 1.
  * Primary class for global variables and common methods.
  */
 public class App {
@@ -51,6 +53,7 @@ public class App {
 
     /**
      * @param args the command line arguments
+     * This is changed method-level javadoc block 1.
      */
     public static void main(String[] args) {
 
@@ -79,6 +82,7 @@ public class App {
     }
 
     /**
+     * This is changed method-level javadoc block 2.
      * Get the version from the build properties. Defaults to 0.0 if not found.
      *
      * @return
@@ -96,6 +100,7 @@ public class App {
     }
 
     /**
+     * This is changed method-level javadoc block 3.
      * Initialize the GUI Application.
      */
     public static void init() {

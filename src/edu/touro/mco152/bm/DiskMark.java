@@ -3,7 +3,8 @@ package edu.touro.mco152.bm;
 import java.text.DecimalFormat;
 
 /**
- *
+ * This is changed Java file 2 in genkin-doc.
+ * This is changed class-level javadoc block 2.
  */
 public class DiskMark {
 
