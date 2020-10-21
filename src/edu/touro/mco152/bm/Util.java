@@ -10,7 +10,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Utility methods for jDiskMark
+ * Utility methods for jDiskMark. This class contains several useful methods, such as randInt and delecteDirectory
+ *
  */
 public class Util {
 
@@ -19,7 +20,7 @@ public class Util {
     /**
      * Deletes the Directory and all files within
      *
-     * @param path
+     * @param path the path of the directory to delete
      * @return
      */
     static public boolean deleteDirectory(File path) {
