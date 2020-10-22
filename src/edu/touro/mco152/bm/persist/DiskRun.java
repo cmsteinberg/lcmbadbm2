@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * This class keeps track of the current benchmark's Write/Read data and statistics.
+ * This class keeps track of the all benchmark Write/Read data and statistics.
  */
 @Entity
 @Table(name = "DiskRun")
@@ -152,7 +152,7 @@ public class DiskRun implements Serializable {
     // Utility methods for collection
 
     /**
-     * Gets DiskRun's ioMode which is <code>IOMode.READ</code>, <code>IOMode.WRITE</code>, or <code>IOMode.READ_WRITE</code>.
+     * Gets <code>DiskRun</code>'s <code>ioMode</code> which is <code>IOMode.READ</code>, <code>IOMode.WRITE</code>, or <code>IOMode.READ_WRITE</code>.
      * @return IOMode of this DiskRun object
      * @see IOMode
      */
@@ -161,7 +161,7 @@ public class DiskRun implements Serializable {
     }
 
     /**
-     * Sets DiskRun's ioMode to <code>IOMode.READ</code>, <code>IOMode.WRITE</code>, or <code>IOMode.READ_WRITE</code>.
+     * Sets <code>DiskRun</code>'s <code>ioMode</code> to <code>IOMode.READ</code>, <code>IOMode.WRITE</code>, or <code>IOMode.READ_WRITE</code>.
      * @param ioMode the IOMode to become <code>DiskRun</code>'s ioMode
      * @see IOMode
      */
