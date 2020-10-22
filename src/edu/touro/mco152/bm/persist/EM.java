@@ -10,6 +10,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
+ * Creates and manages the <code>EntityManager</code> for jDiskMark
  * @author James
  */
 public class EM {
