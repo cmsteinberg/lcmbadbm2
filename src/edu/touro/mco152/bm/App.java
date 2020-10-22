@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Primary class for global variables and common methods.
+ *  Main class that initializes global variables and begins benchmarking.
  */
 public class App {
 
@@ -228,6 +228,9 @@ public class App {
         worker.cancel(true);
     }
 
+    /**
+     * Checks if has permission to run benchmark, does general setup for benchmark, and runs benchmark.
+     */
     public static void startBenchmark() {
 
         //1. check that there isn't already a worker in progress
